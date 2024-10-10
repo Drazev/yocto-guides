@@ -14,7 +14,7 @@ See [Tasks](https://docs.yoctoproject.org/dev/ref-manual/tasks.html#ref-tasks-in
 Recipe's have a basic workflow defined by the `bitbake` build system. This functionality can also be extended by bbclasses which can change the behavior of the basic workflow by redefining functions like `do_build`. It is also possible to add functions before or after functions in the workflow.
 
 ```mermaid
-  flowchart LR
+  flowchart TD
     do_build --> do_fetch --> do_unpack --> do_patch --> do_populate_lic --> do_configure --> do_compile --> do_install --> do_package --> do_package_qa --> do_packagedata --> do_package_write_deb --> do_prepare_recipe_sysroot
 ```
 
